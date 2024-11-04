@@ -43,9 +43,9 @@ OrderID EmployeeID
 /*удаление таблицы перед созданием, если с таким именем уже есть*/
 DROP TABLE IF EXISTS EmployeeRoles; 
 CREATE TABLE EmployeeRoles (
-EmployeeID INT PRIMARY KEY,
-OrderID INT,
-Photo VARCHAR(10)
+EmployeeRoleID INT PRIMARY KEY,
+EmployeeID INT,
+Role VARCHAR(50)
 );
 
 /*--удаление таблицы, если такая есть*/
